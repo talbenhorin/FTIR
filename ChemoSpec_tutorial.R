@@ -13,6 +13,8 @@ ssp <- files2SpectraObject(
   debug = TRUE,
   sep = ",", header = TRUE)
 
-
-
+myt <- expression(bold(FTIR ~Spectra))
+p <- plotSpectra(ssp, which = c(1, 2, 3, 4, 5, 6, 7), offset = 2, yrange = c(0,14))
+p <- p + ggtitle(myt) + coord_cartesian(xlim = c(600, 2000))
+p 
 
