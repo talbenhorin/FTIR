@@ -18,3 +18,4 @@ p <- plotSpectra(ssp, which = c(1, 2, 3, 4, 5, 6, 7), offset = 2, yrange = c(0,1
 p <- p + ggtitle(myt) + coord_cartesian(xlim = c(600, 2000))
 p 
 
+HCA <- hcaSpectra(ssp, main = myt)
